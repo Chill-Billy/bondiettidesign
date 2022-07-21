@@ -1,0 +1,173 @@
+/* 
+  ~ remember to refer to alfacharlie.co/studio for cool navigation ideas.
+  ~ make sure to figure out how to hide nav menu before you are done.
+   */
+
+body {
+  max-width: 100%;
+ 
+  background-color: rgba(248, 226, 181, 0.2);
+  color:black;
+  font-family: zilla slab, sans-serif;
+  font-weight: 500;
+  margin:auto;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  max-width: 1000px;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+    /*
+  background-image: url("../justmeg.png");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+  background-position-x: 400px;
+  background-position-y: 400px;
+  */
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+  margin: auto;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 300%;
+} 
+
+.sublogo {
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 300%;
+}
+
+.blog {
+  max-width: 80%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.blog-divider {
+  height: 40px;
+  width: auto;
+  display: block;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.art {
+  max-width: 90%;
+  margin: auto;
+}
+
+.masthead {
+  padding: 40px;
+  margin-top: -40px;
+  margin-bottom: -40px;
+
+}
+
+.navlinks {
+  margin-top: -30px;
+  padding-left: 40px;
+  }
+
+.bloglinks {
+  margin-top: -30px;
+  padding-left: 40px;
+}
+
+.headline {
+  padding-left: 80px;
+}
+
+.photo {
+  margin-top: -10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.article {
+  padding: 80px;
+  padding-top: 0px;
+}
+
+.date {
+  margin-top: 30px;
+  padding-left: 80px;
+  font-style: italic;
+  margin-bottom: -15px;
+  font-size: 12px;
+}
+
+.img-gallery {
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.img-gallery img{
+  width: 100%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.img-gallery img:hover{
+  border-radius: 100px;
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.full-img img {
+  max-width: 90%;
+  max-height: 90%;
+}
+ 
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.quote {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}

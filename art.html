@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+
+<title>
+ Art
+</title>
+
+<body>
+<div class="art">
+    
+    <div id="header">
+        <h1>art by brian</h1>
+    </div>
+   
+
+    <div>
+        <p>
+            <a href="index.html">home</a>
+             ~ 
+             <a href="dev.html">web dev</a>
+              ~ 
+             <a href="art.html">art</a>
+              ~ 
+            <a href="blog.html">blog</a>
+        </p>
+    </div>
+    <!--
+    <p> i have been anartist since childhood.
+        I think it's very healthy to maintain an art 
+        practice into your adulthood. The following 
+        are some of may favorite pieces. when you click 
+        on a photo in the gallery, not only is there a 
+        description, but also an affiliate link to 
+        amazon where you can see what art-supplies I 
+        used for the project.
+    </p>
+-->
+    <div class="full-img" id="fullImgBox">
+        <img src="flamingo.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+        <img src="flamingo.jpg" onclick="openFullImg(this.src)">
+        <img src="Kitty.jpg" onclick="openFullImg(this.src)">
+        <img src="808.jpg" onclick="openFullImg(this.src)">
+        <img src="ballet.jpg" onclick="openFullImg(this.src)">
+        <img src="sailboat.jpg" onclick="openFullImg(this.src)">
+        <img src="montanascenic.png" onclick="openFullImg(this.src)">
+        <img src="plant.jpg" onclick="openFullImg(this.src)">
+        <img src="Cult.jpg" onclick="openFullImg(this.src)">
+        <img src="shoe.jpg" onclick="openFullImg(this.src)">
+        <img src="tree.jpg" onclick="openFullImg(this.src)">
+        <img src="treewatercolor.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+<script>
+
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+}
+
+function closeFullImg(){
+    fullImgBox.style.display = "none";
+}
+</script>
+
+</div>
+</body>
+</html>
