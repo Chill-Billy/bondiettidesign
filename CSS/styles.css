@@ -121,6 +121,9 @@ img {
 
 .photo {
   margin-top: -10px;
+  max-width: 80%;
+  max-width: 10px;
+  width: auto;
 }
 
 p {
