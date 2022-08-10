@@ -13,6 +13,39 @@ h1 {
   font-weight: 300;
 }
 
+.nav-container {
+  max-width: 100%;
+  text-align: center;
+  }
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-menu li {
+  float: left;
+}
+
+.nav-menu li a:hover {
+  background-color: #111;
+  color: white;
+}
+
+.nav-menu li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+
 img {
   max-width: 100%;
   max-width: 1000px;
@@ -80,18 +113,16 @@ img {
   padding: 40px;
   margin-top: -40px;
   margin-bottom: -40px;
+  text-align: center;
 
 }
 
-.navlinks {
-  margin-top: -30px;
-  padding-left: 40px;
-  }
-
-.bloglinks {
-  margin-top: -30px;
-  padding-left: 40px;
+.quote {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
 }
+
 
 .headline {
   padding-left: 80px;
@@ -117,7 +148,7 @@ p {
   margin-bottom: -15px;
   font-size: 12px;
 }
-
+/*
 .img-gallery {
   width: 80%;
   margin: 100px auto 50px;
@@ -125,11 +156,21 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
 }
+*/
 
+.img-gallery {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0;
+  column-count: 4;
+  column-gap: 15px;
+}
 .img-gallery img{
   width: 100%;
   cursor: pointer;
   transition: 0.4s;
+  margin-bottom: 15 px;
 }
 
 .img-gallery img:hover{
@@ -162,8 +203,21 @@ p {
   color: #fff;
   cursor: pointer;
 }
-.quote {
-  max-width: 80%;
-  margin: auto;
-  text-align: center;
+
+@media screen and (max-width: 992px) {
+  .img-gallery {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-gallery {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .img-gallery {
+    column-count: 1;
+  }
 }
