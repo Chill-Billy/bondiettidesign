@@ -136,13 +136,6 @@ input[type=checkbox]{
  }
  }
 
-.photo img {
-  display: block;
-  max-width: 90vw;
-  height: auto;
-  margin: auto;
-}
-
 .container {
   max-width: 100%;
   margin: auto;
@@ -174,8 +167,17 @@ input[type=checkbox]{
   font-weight: 300;
   line-height: 2;
 }
+
 .blog {
   max-width: 80%;
+  margin: auto;
+  align-items: center;
+}
+
+
+.photo img {
+  display: block;
+  width: 100%;
   max-width: 1000px;
   margin: auto;
 }
@@ -185,6 +187,9 @@ input[type=checkbox]{
   width: auto;
   display: block;
   margin: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  
 }
 
 .art {
@@ -194,27 +199,34 @@ input[type=checkbox]{
 
 .quote {
   max-width: 80%;
+  max-width: 1000px;
   margin: auto;
   text-align: center;
   padding-top: 20px;
 }
 
 .headline {
-  padding: 20px;
-  padding-left: 80px;
+  max-width: 80%;
+  max-width: 1000px;
+  padding-top: 0px;
+  padding-bottom: 12px;
+  margin: auto;
 }
 
 .article {
-  padding: 80px;
+  max-width: 80%;
+  max-width: 1000px;
   padding-top: 0px;
+  margin: auto;
 }
 
 .date {
-  margin-top: 30px;
-  padding-left: 80px;
+  max-width: 80%;
+  max-width: 1000px;
+  padding-top: 12px;
+  margin: auto;
   font-style: italic;
-  margin-bottom: -15px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .img-gallery {
@@ -268,6 +280,7 @@ input[type=checkbox]{
   .img-gallery {
     column-count: 3;
   }
+  
 }
 
 @media screen and (max-width: 768px) {
