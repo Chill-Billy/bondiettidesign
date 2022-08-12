@@ -14,74 +14,87 @@
 
     <div class="blog">
 
-        <div class="masthead">
-            <h1>resume - brian bondietti</h1>
-        </div>
+     <!--- https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/  -->
+   <nav class="navbar">
+    
+    <div>
+      <h1> resume - brian bondietti</h1>
+    </div>
+  
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="index.html">home</a></li>
+        <li><a href="dev.html">resume</a></li>
         
-        <div class="nav-container">
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <ul class="nav-menu">
-              <li><a href="index.html">home</a></li>
-              <li><a href="dev.html">web-dev</a></li>
-              <li><a href="art.html">art</a></li>
-              <li><a href="blog.html">blog</a></li>
-            </ul>
-            </div>
-<!--
-        <br>
+        <!-- DROPDOWN MENU WAS NOT NEEDED ON THIS SITE
+        <li class="services">
+          <a href="/">Services</a>
+        
+          <ul class="dropdown">
+            <li><a href="/">Dropdown 1 </a></li>
+            <li><a href="/">Dropdown 2</a></li>
+            <li><a href="/">Dropdown 2</a></li>
+            <li><a href="/">Dropdown 3</a></li>
+            <li><a href="/">Dropdown 4</a></li>
+          </ul>
+        </li>
+         -->
 
-        <h2><i>*any list item which is hyperlinked has examples of my work.
-            If I have found a new CSS trick that suits my fancy, it may end 
-            up on one of these links. Please feel free to check it out!</i>
-        </h2>
-        
-        <br>
---->
-    <p>
+        <li><a href="art.html">art</a></li>
+        <li><a href="blog.html">blog</a></li>
+      </div>
+    </ul>
+  </nav>
+  <br>
+  <div class="resume">
+    <br>
+    <img src="megcutout.svg" class="blog-divider">
+    <br><br>
+    <h3>
         The following are the things I have been working on to level up my programming skills.
-    </p>
+    </h3>
 
-    <ul>
+    <ul class="resume-items">
     <b>
     <li>HTML and CSS</li>
-    <li>Adobe Suite Refresher course</li>
+    <li>Adobe suite refresher course</li>
     <li>Figma</li>
-    <li>in progress ~ bootstrap</li>
-    <li>in progress ~ javascript</li>
-    <li>Understanding my former job through the lens of UX/UI design.</li>
+    <li>In progress ~ Bootstrap</li>
+    <li>In progress ~ Javascript</li>
+    <li>Understanding my former job through the context of ux/ui design.</li>
     </b>
-</ul>    
-
-<p>
+    </ul>    
+    <br><hr><br>
+    <h3>
         I have had eight years of experience in the newspaper business, 
-        which has contributed to a very broad based media skillset including:
-    </p>
+        which has contributed to a broad based media skillset including:
+    </h3>
     
-    <ul>
+    <ul class="resume-items">
         <li><b>Photography</b></li>
-        <li><b>Traditional Darkroom</b></li>
-        <li><b>1990s Design Programs</b> ~ <i>My first program was Aldus Pagemaker.</i></li>
-        <li><b>Adobe Suite</b> ~ <i>I converted my newspaper from traditional to digital methods in the late 1990s-2000s.</i></li>
-        <li><b>Ad Design</b> ~ <i>I was our newspaper's primary ad designer. We used Quark Xpress back then.</i></li>
-        <li><b>Traditional Media Design</b> ~ <i>Our newspaper was also a printshop. I designed business stationary, calendars and Campaign Posters for our clients and was the primary contact.</i></li>
-        <li><b>Auxilliary Writing Skills</b> ~ <i>We had an excellent editor at our newspaper and I was encoouraged to
+        <li><b>Traditional darkroom</b></li>
+        <li><b>1990s design programs</b> ~ <i>My first program was Aldus Pagemaker.</i></li>
+        <li><b>Adobe suite</b> ~ <i>I converted my newspaper from traditional to digital methods in the late 1990s-2000s.</i></li>
+        <li><b>Ad design</b> ~ <i>I was our newspaper's primary ad designer. We used Quark Xpress back then.</i></li>
+        <li><b>Traditional media design</b> ~ <i>Our newspaper was also a printshop. I designed business stationary, calendars and Campaign Posters for our clients and was the primary contact.</i></li>
+        <li><b>Auxilliary writing skills</b> ~ <i>We had an excellent editor at our newspaper and I was encoouraged to
             write the occasional article. I used to contact Ski Lodges in Montana and trade out advertising space for lodging and lift tickets.</i>
         </li>
     </ul>
-
-    <p>
-        In the early 2000's I was also a jack-of-all-trades digitally when I ran my own 
-       small business. I maintained my website with WordPress including designing a small 
-       'do your own estimate' form. I ran my own business, purchased ads in local media outlets and 
+    <br><hr><br>
+    <h3>
+        In the early 2000's I used all of these skills to operate a small service industry business. 
+        I ran my own business, purchased ads in local media outlets and 
        engaged in business estimates and sales. I did my own invoicing and bookkeeping
        and managed employees. Notable programs I have used during these times are:
-    </p>
+    </h3>
     
-    <ul>
+    <ul class="resume-items">
         <b>
         <li>WordPress</li>
         <li>Squarespace</li>
@@ -92,7 +105,17 @@
         </b>
     </ul>
 
-    <p>Check out my art and blog pages to see where I'm currently at on laying out in basic html and css.</p>
+    <h3> I particularly enjoy typography and graphic-design. 
+        I enjoy making icons and business logos in SVG formats, 
+        and I might enjoy a job where I can continue developing 
+        my design skills along my web-dev skills.
+    </h3>
+    
+    <br><br>
+
+    <img src="megcutout.svg" class="blog-divider">
+
+    <br><br>
 <!--
     <p>
         The following are projects I am working on in order to enhance my education, if 
@@ -107,7 +130,7 @@
     </ul>
 -->
 </div>
-
+</div>
 </body>
 
 </html>

@@ -15,31 +15,44 @@
 <body>
 <div class="art">
     
-    <div class="masthead">
-        <h1>bondietti design - art by brian</h1>
-    </div>
-   
-
-    <div class="nav-container">
-        <ul class="nav-menu">
-          <li><a href="index.html">home</a></li>
-          <li><a href="dev.html">web-dev</a></li>
-          <li><a href="art.html">art</a></li>
-          <li><a href="blog.html">blog</a></li>
+    <!--- https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/  -->
+    <nav class="navbar">
+    
+        <div>
+          <h1>bondietti design - art gallery</h1>
+        </div>
+      
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="dev.html">resume</a></li>
+            
+            <!-- DROPDOWN MENU WAS NOT NEEDED ON THIS SITE
+            <li class="services">
+              <a href="/">Services</a>
+            
+              <ul class="dropdown">
+                <li><a href="/">Dropdown 1 </a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 3</a></li>
+                <li><a href="/">Dropdown 4</a></li>
+              </ul>
+            </li>
+             -->
+    
+            <li><a href="art.html">art</a></li>
+            <li><a href="blog.html">blog</a></li>
+          </div>
         </ul>
-    </div>
-
-    <!--
-    <p> i have been anartist since childhood.
-        I think it's very healthy to maintain an art 
-        practice into your adulthood. The following 
-        are some of may favorite pieces. when you click 
-        on a photo in the gallery, not only is there a 
-        description, but also an affiliate link to 
-        amazon where you can see what art-supplies I 
-        used for the project.
-    </p>
--->
+      </nav>
+    <br> 
+     
     <div class="full-img" id="fullImgBox">
         <img src="flamingo.jpg" id="fullImg">
         <span onclick="closeFullImg()">X</span>
@@ -79,6 +92,8 @@
         <img src="treewatercolor.jpg" onclick="openFullImg(this.src)">
     </div>
 
+    <img src="megcutout.svg" class="blog-divider">
+    <br><br>
 <script>
 
 var fullImgBox = document.getElementById("fullImgBox");
