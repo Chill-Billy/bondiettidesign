@@ -136,9 +136,11 @@ input[type=checkbox]{
  }
  }
 
-img {
-  max-width: 90%;
-  max-width: 1000px;
+.photo img {
+  display: block;
+  max-width: 90vw;
+  height: auto;
+  margin: auto;
 }
 
 .container {
@@ -151,7 +153,7 @@ img {
 }
 
 .logo {
-  width: 100%;
+  width: 90%;
   margin: auto;
   height: 50vh;
   display: flex;
@@ -200,11 +202,6 @@ img {
 .headline {
   padding: 20px;
   padding-left: 80px;
-}
-
-.photo {
-  max-width: 80%;
-  width: auto;
 }
 
 .article {
