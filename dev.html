@@ -47,9 +47,10 @@
           <li><a href="art.html">art</a></li>
           <li><a href="blog.html">blog</a></li>
         </div>
-    <div class="blog">
 
-    </ul>
+<div class="blog">
+
+  </ul>
   </nav>
   <br>
   <div class="resume">
@@ -117,21 +118,35 @@
     <img src="megcutout.svg" class="blog-divider">
 
     <br><br>
-<!--
-    <p>
-        The following are projects I am working on in order to enhance my education, if 
-        a particular list-item has a hyperlink, it means the project has been completed and you can view it.
-    </p>
 
-    <ul>
-        <li>Briceno Music</li>
-        <li>Dynamic Hearing</li>
-        <li>Web Developer CV</li>
-        <li>Lisa Gerard Art</li>
-    </ul>
--->
 </div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+<script>
+
+  //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+
 </div>
+
 </body>
 
 </html>
