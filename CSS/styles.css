@@ -195,7 +195,7 @@ input[type=checkbox]{
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 30px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  font-size: 24px; /* Increase font size */
   font-family: zilla slab, sans-serif;
 }
 
