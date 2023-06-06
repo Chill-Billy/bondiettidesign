@@ -1,6 +1,5 @@
 ### Hi there 👋
 
-This was my first website. I tried all the concepts I learned thru pages on this website. I've since moved on to trying to understand design systems.
 
 
 <!--
